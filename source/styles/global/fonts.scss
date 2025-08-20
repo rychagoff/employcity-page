@@ -1,1 +1,6 @@
 /* здесь подключите шрифты*/
+
+@include font-face("Lato", 400, normal, url("../../fonts/lato/lato-regular.woff2") format("woff2"));
+@include font-face("Lato", 600, normal, url("../../fonts/lato/lato-semibold.woff2") format("woff2"));
+@include font-face("Lato", 700, normal, url("../../fonts/lato/lato-bold.woff2") format("woff2"));
+@include font-face("Lato", 800, normal, url("../../fonts/lato/lato-heavy.woff2") format("woff2"));

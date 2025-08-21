@@ -1,0 +1,5 @@
+.hero__image img {
+  @include viewport-desktop {
+    width: 100%;
+  }
+}

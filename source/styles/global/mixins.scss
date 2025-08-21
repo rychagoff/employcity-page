@@ -7,3 +7,15 @@
     src: $font-src;
   }
 }
+
+@mixin viewport-tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin viewport-desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}

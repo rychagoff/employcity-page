@@ -5,3 +5,13 @@
   color: $color-default-white;
   text-decoration: none;
 }
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__icon {
+  color: $color-accent-primary;
+}

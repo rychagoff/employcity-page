@@ -1,0 +1,17 @@
+.main-nav {
+  &__item {
+    &--is-active a {
+      color: $color-summer-sky;
+    }
+  }
+
+  &__link {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+
+    color: $color-default-white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

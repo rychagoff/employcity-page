@@ -5,6 +5,14 @@
 @import "./global/fonts.scss";
 
 /* BLOCKS */
-// @import "./blocks/header.scss";
+@import "./blocks/title.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/order.scss";
+@import "./blocks/process.scss";
+@import "./blocks/form.scss";
+@import "./blocks/payment.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-footer.scss";

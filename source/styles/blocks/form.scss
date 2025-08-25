@@ -1,0 +1,15 @@
+.form__label input {
+  &::placeholder {
+    color: $color-black-jaguar;
+  }
+}
+
+.form__button {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
+
+  &--secondary {
+    color: $color-black-jaguar;
+  }
+}

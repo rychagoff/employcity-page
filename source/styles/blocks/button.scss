@@ -1,0 +1,18 @@
+.button {
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 16px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--accent {
+    background-color: $color-accent-primary;
+    color: $color-default-white;
+  }
+
+  &--secondary {
+    background-color: $color-default-white;
+    color: $color-black-russian-lighten;
+  }
+}

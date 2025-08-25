@@ -58,19 +58,19 @@
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__block-text">
-              <h1 class="hero__title title title--xl">Lorem ipsum dolor sit amet consectetur adipiscing</h1>
+              <h1 class="hero__title title title--xl"><span>Lorem ipsum</span> dolor sit amet consectetur <span>adipiscing</span></h1>
               <p class="hero__description">
                 <strong>At&nbsp;vero eos et&nbsp;accusamus et&nbsp;iusto odio dignissimos ducimus!</strong>
-                <ul>
+                <!-- <ul>
                   <li>Totam rem aperiam eaque ipsa</li>
                   <li>Sit voluptatem accusantium doloremque laudantium</li>
                   <li>Sed ut&nbsp;perspiciatis, unde omnis iste natus error</li>
-                </ul>
-                <!-- <pre>
+                </ul> -->
+                <!-- <pre> -->
                   - Totam rem aperiam eaque ipsa
                   - Sit voluptatem accusantium doloremque laudantium
                   - ut perspiciatis, unde omnis iste natus error
-                </pre> -->
+                <!-- </pre> -->
               </p>
               <div class="hero__buttons">
                 <button class="hero__button button button--accent" type="button">Заказать</button>
@@ -92,7 +92,7 @@
         <div class="container">
           <div class="order__wrapper">
             <header class="order__header">
-              <h2 class="order__title title title--lg">Оформление заказа</h2>
+              <h2 class="order__title title title--lg">Оформление <span>заказа</span></h2>
               <p>Перед заполнением формы ознакомьтесь с&nbsp;нашей схемой работы!</p>
             </header>
             <div class="order__process process">
@@ -160,12 +160,15 @@
                   <span>Sed ut perspiciatis, unde omnis iste natus</span>
                   <input type="range" name="percent" min="0" max="100" value="75" step="1">
                 </label>
-                <label class="form__label button button--upload">
+                <label class="form__button button button--secondary">
+                  <svg width="20" height="20">
+                    <use href="images/icons/stack.svg#file"></use>
+                  </svg>
                   <span>Прикрепить файл</span>
-                  <input type="file" name="file" multiple accept="image/*,.pdf">
+                  <input class="visually-hidden" type="file" name="file" multiple accept="image/*,.pdf">
                 </label>
               </fieldset>
-              <button type="submit">Отправить</button>
+              <button class="form__button button button--accent" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -175,7 +178,7 @@
         <div class="container">
           <div class="main-footer__wrapper">
             <div class="main-footer__copyright">
-              <p>&copy;&nbsp;2018 &laquo;LoremIpsum.net&raquo; Все права защищены.</p>
+              <p>&copy;&nbsp;2018 &laquo;LOREMIPSUM.NET&raquo; Все права защищены.</p>
             </div>
             <div class="main-footer__payments payments">
               <ul class="payments__list">

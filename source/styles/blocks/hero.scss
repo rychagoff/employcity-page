@@ -1,3 +1,19 @@
+.hero__description {
+  font-size: 20px;
+  line-height: 24px;
+
+  color: $color-default-black;
+}
+
+.hero__description strong {
+  display: block;
+  font-weight: 700;
+}
+
+.hero__image {
+  background-color: $color-accent-primary;
+}
+
 .hero__image img {
   @include viewport-desktop {
     width: 100%;

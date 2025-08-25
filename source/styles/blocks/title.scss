@@ -1,0 +1,22 @@
+.title {
+  &--xl {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    color: $color-default-black;
+  }
+
+  &--lg {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+  }
+}
+
+.title span {
+  color: $color-accent-primary;
+}

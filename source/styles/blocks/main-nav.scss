@@ -1,17 +1,21 @@
-.main-nav {
-  &__item {
-    &--is-active a {
-      color: $color-summer-sky;
-    }
-  }
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  &__link {
-    font-size: 13px;
-    line-height: 16px;
-    font-weight: 600;
-
-    color: $color-default-white;
-    text-decoration: none;
-    text-transform: uppercase;
+.main-nav__item {
+  &--is-active a {
+    color: $color-summer-sky;
   }
+}
+
+.main-nav__link {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+
+  color: $color-default-white;
+  text-decoration: none;
+  text-transform: uppercase;
 }

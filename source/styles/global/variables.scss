@@ -1,6 +1,24 @@
 /* здесь используйте глобальные переменные */
+// FONTS
+
+$font-family:         "Lato", sans-serif;
+
+// COLORS
+
+$color-default-white:          #ffffff;
+$color-default-black:          #000000;
+
+$color-accent-primary:         #3e9cdc;
+
+$color-summer-sky:             #43abf0;
+$color-black-russian:          #10101d;
+$color-black-russian-lighten:  #2a2b30;
+$color-black-jaguar:           #272733;
+$color-blue-zodiac:            #3d4050;
+$color-silver:                 #bbbbbb;
+$color-silver-lighten:         #c3c3c3;
 
 // VIEWPORTS
 
-$tablet-width: 768px;
-$desktop-width: 1440px;
+$tablet-width:                     768px;
+$desktop-width:                   1440px;

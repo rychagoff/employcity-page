@@ -3,3 +3,17 @@
 
   opacity: 0.9;
 }
+
+.main-header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__logo {
+  display: inline-flex;
+  height: 21px;
+}
+
+.main-header__logo img {
+  display: block;
+}

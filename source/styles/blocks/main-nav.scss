@@ -1,7 +1,56 @@
+.main-nav__toggle {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 10px;
+
+  background-color: $color-accent-primary;
+  border: 0;
+
+  @include viewport-tablet {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    background-color: $color-default-white;
+  }
+
+  &::after {
+    box-shadow: 0 9px 0 0 $color-default-white;
+  }
+}
+
+.main-nav__wrapper {
+  display: none;
+
+  @include viewport-tablet {
+    display: block;
+  }
+}
+
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include viewport-tablet {
+    flex-direction: row;
+    gap: 60px;
+  }
 }
 
 .main-nav__item {

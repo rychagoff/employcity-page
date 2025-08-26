@@ -1,13 +1,36 @@
+.hero__title {
+  margin-bottom: 32px;
+
+  @include viewport-desktop {
+    margin-bottom: 80px;
+  }
+}
+
 .hero__description {
-  font-size: 20px;
-  line-height: 24px;
+  margin-bottom: 32px;
 
   color: $color-default-black;
+
+  @include viewport-desktop {
+    margin-bottom: 80px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .hero__description strong {
   display: block;
+  margin-bottom: 10px;
+
   font-weight: 700;
+}
+
+.hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 10px;
 }
 
 .hero__image {
@@ -15,6 +38,8 @@
 }
 
 .hero__image img {
+  display: block;
+
   @include viewport-desktop {
     width: 100%;
   }

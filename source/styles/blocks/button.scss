@@ -1,8 +1,22 @@
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 183px;
+  margin: 0;
+  padding: 14px 32px;
+
   font-family: inherit;
   font-size: 13px;
-  line-height: 16px;
+  line-height: 13px;
 
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-default-white;
+  border-radius: 4px;
+
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -13,6 +27,7 @@
 
   &--secondary {
     background-color: $color-default-white;
+    border-color: $color-dolphin;
     color: $color-black-russian-lighten;
   }
 }

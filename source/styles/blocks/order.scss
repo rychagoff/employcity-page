@@ -13,5 +13,18 @@
 }
 
 .order__header p {
+  margin: 0;
+
+  text-align: center;
   color: $color-silver;
+}
+
+.order__title {
+  margin-bottom: 14px;
+
+  text-align: center;
+
+  @include viewport-desktop {
+    margin-bottom: 30px;
+  }
 }

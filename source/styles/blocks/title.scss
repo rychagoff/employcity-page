@@ -1,19 +1,32 @@
 .title {
+  margin: 0;
+  padding: 0;
+
   &--xl {
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
 
     text-transform: uppercase;
     color: $color-default-black;
+
+    @include viewport-desktop {
+      font-size: 48px;
+      line-height: 58px;
+    }
   }
 
   &--lg {
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 28px;
+    line-height: 32px;
     font-weight: 800;
 
     text-transform: uppercase;
+
+    @include viewport-desktop {
+      font-size: 36px;
+      line-height: 43px;
+    }
   }
 }
 

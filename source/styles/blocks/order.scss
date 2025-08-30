@@ -12,6 +12,30 @@
   background-size: cover;
 }
 
+.order__wrapper {
+  padding: 50px 0;
+
+  @include viewport-tablet {
+    padding: 75px 0;
+  }
+
+  @include viewport-desktop {
+    padding: 120px 0;
+  }
+}
+
+.order__header {
+  margin-bottom: 35px;
+
+  @include viewport-tablet {
+    margin-bottom: 60px;
+  }
+
+  @include viewport-desktop {
+    margin-bottom: 80px;
+  }
+}
+
 .order__header p {
   margin: 0;
 
@@ -26,5 +50,17 @@
 
   @include viewport-desktop {
     margin-bottom: 30px;
+  }
+}
+
+.order__process {
+  margin-bottom: 35px;
+
+  @include viewport-tablet {
+    margin-bottom: 60px;
+  }
+
+  @include viewport-desktop {
+    margin-bottom: 80px;
   }
 }

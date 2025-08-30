@@ -1,19 +1,39 @@
+:root {
+  --item-width: 209px;
+}
+
 .process__list {
   --gap: 20px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   justify-content: center;
+
   gap: var(--gap);
 
   margin: 0;
   padding: 0;
   list-style: none;
 
+  @include viewport-tablet {
+    // flex-wrap: wrap;
+    // flex-direction: row;
+    // align-items: flex-start;
+
+    grid-template-columns: repeat(3, var(--item-width));
+  }
+
   @include viewport-desktop {
     --gap: 30px;
-    flex-direction: row;
+    // flex-direction: row;
+
+    grid-template-columns: repeat(5, var(--item-width));
   }
 }
 
@@ -24,8 +44,24 @@
   align-items: center;
   row-gap: 20px;
   width: 100%;
-  max-width: 209px;
+  max-width: var(--item-width);
   padding: 0 10px;
+
+  @include viewport-tablet {
+    &:nth-child(3n+3)::after {
+      display: none;
+    }
+
+    &:last-of-type::after {
+      display: none;
+    }
+  }
+
+  @include viewport-desktop {
+    &:nth-child(3n+3)::after {
+      display: block;
+    }
+  }
 
   &::after {
     content: "";
@@ -37,17 +73,21 @@
     background-color: $color-silver-lighten;
     mask-image: url("../../images/icons/stack.svg#bullets");
 
-    @include viewport-desktop {
+    @include viewport-tablet {
       position: absolute;
-      top: 47px;
+      top: 35px;
       left: 100%;
       transform: translateX(calc(-50% + var(--gap) / 2));
     }
+
+    @include viewport-desktop {
+      top: 47px;
+    }
   }
 
-  &:last-of-type::after {
-    display: none;
-  }
+  // &:last-of-type::after {
+  //   display: none;
+  // }
 }
 
 .process__icon {

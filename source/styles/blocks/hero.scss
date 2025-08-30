@@ -1,3 +1,40 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+
+  @include viewport-tablet {
+    height: 100vh;
+    max-height: 600px;
+    margin-top: -84px;
+    padding: 100px 0;
+  }
+
+  @include viewport-desktop {
+    max-height: 850px;
+    margin-top: -100px;
+    padding: 0;
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hero__block-text {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 540px;
+
+  @include viewport-desktop {
+    max-width: 780px;
+  }
+}
+
 .hero__title {
   margin-bottom: 32px;
 
@@ -34,13 +71,30 @@
 }
 
 .hero__image {
+  display: none;
+
   background-color: $color-accent-primary;
+
+  @include viewport-tablet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
 }
 
 .hero__image img {
   display: block;
 
-  @include viewport-desktop {
+  @include viewport-tablet {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include viewport-desktop {
+    // object-fit: contain;
   }
 }

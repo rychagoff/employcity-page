@@ -20,14 +20,33 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+
   &--accent {
     background-color: $color-accent-primary;
     color: $color-default-white;
+
+    &:hover {
+      background-color: $color-summer-sky;
+    }
+
+    &:active {
+      background-color: $color-accent-primary;
+    }
   }
 
   &--secondary {
     background-color: $color-default-white;
     border-color: $color-dolphin;
     color: $color-black-russian-lighten;
+
+    &:hover {
+      background-color: $color-white-smoke;
+    }
+  }
+
+  &:focus {
+    outline-color: $color-endeavour;
   }
 }

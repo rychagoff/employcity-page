@@ -5,3 +5,32 @@
   color: $color-default-white;
   text-decoration: none;
 }
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include viewport-desktop {
+    flex-direction: row;
+    gap: 38px;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.contacts__icon {
+  color: $color-accent-primary;
+}
+
+.contacts__icon svg {
+  display: block;
+}

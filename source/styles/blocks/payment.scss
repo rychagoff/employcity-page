@@ -1,6 +1,22 @@
+.payment {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
 .payment p {
+  margin: 0;
+
   font-size: 13px;
   line-height: 16px;
 
   color: $color-silver-lighten;
+}
+
+.payment__icon {
+  color: $color-accent-primary;
+}
+
+.payment__icon svg {
+  display: block;
 }

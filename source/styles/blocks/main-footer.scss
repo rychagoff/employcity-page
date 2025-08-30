@@ -1,8 +1,45 @@
 .main-footer {
+  padding: 30px 0;
   background-color: $color-blue-zodiac;
 }
 
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @include viewport-desktop {
+    flex-direction: row;
+  }
+}
+
 .main-footer__copyright {
+  order: 3;
+
   font-size: 13px;
   line-height: 16px;
+
+  @include viewport-desktop {
+    order: 1;
+  }
+}
+
+.main-footer__copyright p {
+  margin: 0;
+}
+
+.main-footer__payments {
+  order: 1;
+
+  @include viewport-desktop {
+    order: 2;
+  }
+}
+
+.main-footer__contacts {
+  order: 2;
+
+  @include viewport-desktop {
+    order: 3;
+  }
 }

@@ -5,11 +5,6 @@
 .process__list {
   --gap: 20px;
 
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
-
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -22,16 +17,11 @@
   list-style: none;
 
   @include viewport-tablet {
-    // flex-wrap: wrap;
-    // flex-direction: row;
-    // align-items: flex-start;
-
     grid-template-columns: repeat(3, var(--item-width));
   }
 
   @include viewport-desktop {
     --gap: 30px;
-    // flex-direction: row;
 
     grid-template-columns: repeat(5, var(--item-width));
   }
@@ -84,10 +74,6 @@
       top: 47px;
     }
   }
-
-  // &:last-of-type::after {
-  //   display: none;
-  // }
 }
 
 .process__icon {

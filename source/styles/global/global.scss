@@ -39,6 +39,10 @@ select {
   line-height: 22px;
   font-weight: 400;
   color: $color-black-jaguar;
+
+  &:focus {
+    outline-color: $color-endeavour;
+  }
 }
 
 .visually-hidden {

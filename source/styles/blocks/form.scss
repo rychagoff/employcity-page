@@ -70,6 +70,8 @@
     width: 100%;
     max-width: 100%;
     padding: 12px 10px;
+    font-size: 15px;
+    line-height: 22px;
   }
 
   &--accent {
@@ -84,96 +86,3 @@
     max-height: 48px;
   }
 }
-
-// .form__fieldset {
-//   @include viewport-tablet {
-//     grid-template-areas:
-//       "select select"
-//       "email  name"
-//       "range  file";
-//     grid-template-columns: repeat(2, 1fr);
-//     gap: 30px;
-//   }
-
-//   @include viewport-desktop {
-//     grid-template-areas:
-//       "select email  name"
-//       "range  range  file";
-//     grid-template-columns: repeat(3, 1fr);
-//     margin-bottom: 40px;
-//   }
-// }
-
-// .form__label {
-//   &--select {
-//     grid-area: select;
-//     grid-column: 1 / -1;
-//     grid-row: 1 / 2;
-//   }
-
-//   &--range {
-//     grid-area: range;
-//     grid-column: 1 / -1;
-//     grid-row: 4 / 5;
-//   }
-
-//   &--range span {
-//     display: block;
-//   }
-
-//   &--email {
-//     grid-area: email;
-//     grid-column: 1 / -1;
-//     grid-row: 2 / 3;
-//   }
-
-//   &--name {
-//     grid-area: name;
-//     grid-column: 1 / -1;
-//     grid-row: 3 / 4;
-//   }
-// }
-
-// .form__label input,
-// .form__label select {
-//   width: 100%;
-//   max-width: 370px;
-// }
-
-// .form__label input[type="range"] {
-//   max-width: 100%;
-// }
-
-// .form__label select {
-//   max-width: 100%;
-
-//   @include viewport-desktop {
-//     max-width: 370px;
-//   }
-// }
-
-// .form__button {
-//   column-gap: 2px;
-//   width: 100%;
-//   max-width: 370px;
-//   max-height: 48px;
-
-//   font-size: 15px;
-//   line-height: 18px;
-//   font-weight: 600;
-
-//   &--accent {
-//     @include viewport-tablet {
-//       max-width: 100%;
-//     }
-//   }
-
-//   &--secondary {
-//     grid-area: file;
-//     grid-column: 1 / -1;
-//     grid-row: 5 / 6;
-//     padding-top: 12px;
-//     padding-bottom: 12px;
-//     color: $color-black-jaguar;
-//   }
-// }

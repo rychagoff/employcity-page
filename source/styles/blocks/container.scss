@@ -8,12 +8,10 @@
 
   @include viewport-tablet {
     --padding-offset: 30px;
-    // max-width: $tablet-width;
   }
 
   @include viewport-desktop {
     --padding-offset: 90px;
     max-width: 1350px;
-    // max-width: $desktop-width;
   }
 }

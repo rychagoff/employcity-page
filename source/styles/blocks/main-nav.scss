@@ -17,30 +17,6 @@
     &::after {
       bottom: 10px;
     }
-
-    // &:hover::before {
-    //   top: 50%;
-    //   transform:
-    //     translate(-50%, -50%)
-    //     rotate(45deg);
-    //   box-shadow: 0 5px 0 0 rgba($color-default-white, 0);
-    //   transition:
-    //     top 0.2s ease-in-out,
-    //     box-shadow 0.2s ease-in-out,
-    //     transform 0.2s ease-in-out;
-    //   transition-delay: 0s, 0s, 0.25s;
-    // }
-
-    // &:hover::after {
-    //   bottom: 50%;
-    //   transform:
-    //     translate(-50%, 50%)
-    //     rotate(-45deg);
-    //   transition:
-    //     bottom 0.2s ease-in-out,
-    //     transform 0.2s ease-in-out;
-    //   transition-delay: 0s, 0.25s;
-    // }
   }
 
   &--is-closed .main-nav__wrapper {
@@ -108,14 +84,6 @@
   }
 }
 
-.main-nav__wrapper {
-  // display: none;
-
-  // @include viewport-tablet {
-  //   display: block;
-  // }
-}
-
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -153,4 +121,14 @@
   color: $color-default-white;
   text-decoration: none;
   text-transform: uppercase;
+
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: $color-summer-sky;
+  }
+
+  &:focus {
+    outline-color: $color-endeavour;
+  }
 }

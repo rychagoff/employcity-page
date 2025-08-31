@@ -1,0 +1,1 @@
+var t=document.querySelector(".range"),n=t.querySelector(".range__input"),r=t.querySelector(".range__output");n.addEventListener("input",u);r.textContent=`${n.value} %`;function u(e){t.style.setProperty("--value",e.target.value),e.target.nextElementSibling.value=`${e.target.value} %`}

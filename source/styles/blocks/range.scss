@@ -33,7 +33,6 @@
 }
 
 .range__input::-webkit-slider-thumb {
-  -webkit-appearance: none;
   width: 25px;
   height: 25px;
   margin-top: -10px;
@@ -73,16 +72,17 @@
 .range__input:active::-webkit-slider-thumb {
   box-shadow: 0 0 0 30px inset $color-accent-primary;
 }
+
 .range__input:active::-moz-range-thumb {
   box-shadow: 0 0 0 30px inset $color-accent-primary;
 }
 
 .range__input:disabled::-webkit-slider-thumb {
-  box-shadow: 0 0 0 30px inset gray;
+  box-shadow: 0 0 0 30px inset $color-silver;
 }
 
 .range__input:disabled::-moz-range-thumb {
-  box-shadow: 0 0 0 30px inset gray;
+  box-shadow: 0 0 0 30px inset $color-silver;
 }
 
 .range__input:focus-visible::-webkit-slider-thumb {

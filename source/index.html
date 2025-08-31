@@ -159,10 +159,30 @@
                 <label class="form__label form__label--name">
                   <input type="text" name="name" placeholder="Ваше имя">
                 </label>
-                <label class="form__label form__label--range">
-                  <span>Sed ut perspiciatis, unde omnis iste natus</span>
-                  <input type="range" name="percent" min="0" max="100" value="75" step="1">
-                </label>
+
+                <div class="form__label form__label--range range" style="--value: 75;">
+                  <label class="range__label" for="tailmetr">
+                    Sed ut perspiciatis, unde omnis iste natus
+                  </label>
+                  <!-- <div class="range__track"></div>
+                  <div class="range__progress"></div> -->
+                  <div class="range__thumbs">
+                    <input
+                      class="range__input"
+                      id="tailmetr"
+                      type="range"
+                      name="formRange"
+                      min="0"
+                      max="100"
+                      value="75"
+                      step="1">
+                    <output
+                      class="range__output"
+                      id="output"
+                    ></output>
+                  </div>
+                </div>
+
                 <label class="form__button form__button--secondary button button--secondary">
                   <svg width="20" height="20">
                     <use href="images/icons/stack.svg#input-file"></use>

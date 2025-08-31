@@ -1,0 +1,104 @@
+.range {
+  position: relative;
+}
+
+.range__label {
+  display: block;
+  max-width: 80%;
+}
+
+.range__input {
+  appearance: none;
+  accent-color: rgba($color-default-white, 0.7);
+  height: 37px;
+  margin: 0;
+
+  background: none;
+}
+
+.range__input::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  height: 8px;
+  background-color: rgba($color-default-white, 0.7);
+  border: 1px solid $color-default-white;
+  border-radius: 8px;
+}
+
+.range__input::-moz-range-track {
+  box-sizing: border-box;
+  height: 8px;
+  background-color: rgba($color-default-white, 0.7);
+  border: 1px solid $color-default-white;
+  border-radius: 8px;
+}
+
+.range__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  margin-top: -10px;
+  border: none;
+  border-radius: 50%;
+  background: $color-accent-primary;
+  box-shadow: 0 0 0 5px inset $color-endeavour;
+  transition: 300ms;
+}
+
+.range__input::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  margin-top: 0;
+  border: none;
+  border-radius: 50%;
+  background: $color-accent-primary;
+  box-shadow: 0 0 0 5px inset $color-endeavour;
+  transition: 300ms;
+}
+
+.range__input:focus-visible {
+  outline-offset: 10px;
+  outline: 1px solid $color-accent-primary;
+}
+
+.range__input:hover::-webkit-slider-thumb,
+.range__input:focus-visible::-webkit-slider-thumb {
+  box-shadow: 0 0 0 10px inset $color-accent-primary;
+}
+
+.range__input:hover::-moz-range-thumb,
+.range__input:focus-visible::-moz-range-thumb {
+  box-shadow: 0 0 0 10px inset $color-accent-primary;
+}
+
+.range__input:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 30px inset $color-accent-primary;
+}
+.range__input:active::-moz-range-thumb {
+  box-shadow: 0 0 0 30px inset $color-accent-primary;
+}
+
+.range__input:disabled::-webkit-slider-thumb {
+  box-shadow: 0 0 0 30px inset gray;
+}
+
+.range__input:disabled::-moz-range-thumb {
+  box-shadow: 0 0 0 30px inset gray;
+}
+
+.range__input:focus-visible::-webkit-slider-thumb {
+  outline: 3px solid $color-default-white;
+}
+
+.range__input:focus-visible::-moz-range-thumb {
+  outline: 3px solid $color-default-white;
+}
+
+.range__thumbs {
+  display: flex;
+}
+
+.range__output {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

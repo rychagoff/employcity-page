@@ -35,15 +35,19 @@
 .form__label input,
 .form__label select {
   width: 100%;
-  padding: 12px 10px;
-
-  background-color: rgba($color-default-white, 0.85);
-  border: 1px solid $color-default-white;
-  border-radius: 3px;
 
   &::placeholder {
     color: $color-black-jaguar;
   }
+}
+
+.form__label input[type="text"],
+.form__label input[type="email"],
+.form__label select {
+  padding: 12px 10px;
+  background-color: rgba($color-default-white, 0.85);
+  border: 1px solid $color-default-white;
+  border-radius: 3px;
 }
 
 .form__label {
